@@ -12,9 +12,9 @@ body {
   padding: 15px 34px;
   border-radius: 8px;
   background: rgb(255, 84, 0);
+  border: 1px solid #ff5400;
   color: #fff;
   font-weight: 700;
-  border: 0;
   cursor: pointer;
 }
 .btn-primary:hover {
@@ -129,19 +129,52 @@ nav a:hover {
   padding-bottom: 16px;
 }
 
+/* destination section */
+.destination {
+  text-align: center;
+}
+.destination h3 {
+  color: rgb(19, 19, 24);
+  font-size: 2.35rem;
+  font-weight: 800;
+  margin: 0;
+}
+.destination p {
+  color: rgba(19, 19, 24, 0.7);
+  padding: 24px 0 48px 0;
+}
+.row1 {
+  display: flex;
+  gap: 24px;
+}
+.row2 {
+  display: flex;
+  gap: 24px;
+  margin: 24px 0;
+}
+.row3 {
+  display: flex;
+  gap: 24px;
+}
+
+
+
 /* mobile devices */
 @media screen and (max-width: 600px) {
   body {
     padding: 0 20px;
   }
   nav,
-  .popular {
+  .popular,
+  .row1,
+  .row2,
+  .row3 {
     flex-direction: column;
   }
   nav li {
     padding-right: 20px;
   }
-  nav a{
+  nav a {
     font-size: 1rem;
   }
   .banner {
@@ -169,7 +202,7 @@ nav a:hover {
   .field {
     margin-bottom: 10px;
   }
-  .popular-img{
+  .popular-img {
     width: 100%;
   }
 }
