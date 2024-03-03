@@ -1,3 +1,48 @@
-*{
-    font-family: "Mulish", sans-serif;
+/* shared style */
+* {
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* header related styles */
+/* nav related styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+}
+nav h3 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #131318;
+  margin-left: 5px;
+}
+.travel{
+  color: #FF5400;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    padding-right: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: #424247;
+    font-size: 1.15rem;
+}
+nav a:hover{
+    color: #FF5400;
+    transition: .5s;
 }
