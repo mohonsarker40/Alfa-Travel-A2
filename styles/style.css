@@ -8,6 +8,20 @@ body {
   margin: 0 auto;
 }
 
+.btn-primary {
+  padding: 15px 34px;
+  border-radius: 8px;
+  background: rgb(255, 84, 0);
+  color: #fff;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+.btn-primary:hover{
+    color: rgb(255, 84, 0);
+    background: #fff;
+    transition: 0.5s;
+}
 /* header related styles */
 /* nav related styles */
 nav {
@@ -22,7 +36,7 @@ nav > div {
   align-items: center;
 }
 nav h3 {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 800;
   color: #131318;
   margin-left: 5px;
@@ -52,15 +66,71 @@ nav a:hover {
   background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
   height: 80vh;
   border-radius: 16px;
+  text-align: center;
+}
+.banner-content {
+  color: rgb(255, 255, 255);
+  padding-top: 104px;
+  margin-bottom: 48px;
+}
+.banner-content h2 {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 800;
+}
+.banner-content p {
+  font-size: 1rem;
+}
+.banner-inputs{
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+}
+.field {
+  padding: 16px 84px 16px 16px;
+  color: rgba(19, 19, 24, 0.5);
+  border-radius: 8px;
+  border: none;
+  margin-right: 20px;
+}
+.search{
+  padding-right: 5px;
 }
 
 /* mobile devices */
 @media screen and (max-width: 600px) {
+    body{
+        padding: 0 20px;
+    }
   nav {
     flex-direction: column;
     text-align: center;
   }
   nav li {
     padding-right: 25px;
+  }
+  .banner{
+    height: 100vh;
+    margin-top: 50px;
+  }
+  .banner-content {
+    padding-top: 30px;
+    margin-bottom: 0;
+  }
+  .banner-content h2 {
+    font-size: 2rem;
+  }
+  .banner-content p {
+    font-size: .9rem;
+  }
+  .banner-inputs{
+    background: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .find{
+    width: 96%;
+  }
+  .field{
+    margin-bottom: 10px;
   }
 }
