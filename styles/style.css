@@ -3,7 +3,7 @@
   font-family: "Mulish", sans-serif;
 }
 
-body {
+header, main {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -35,7 +35,7 @@ nav > div {
   display: flex;
   align-items: center;
 }
-nav h3 {
+.name {
   font-size: 2.25rem;
   font-weight: 800;
   color: #131318;
@@ -157,6 +157,36 @@ nav a:hover {
   gap: 24px;
 }
 
+/* footer section  */
+footer{
+    margin-top: 50px;
+    text-align: center;
+    padding: 110px 0;
+    background: rgba(19, 19, 24, 0.05);
+}
+.footer-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: rgb(90, 90, 93);
+}
+.social-link{
+    padding-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.social-link img{
+  cursor: pointer;
+}
+
+hr{
+    border: 1px solid rgba(19, 19, 24, 0.1);
+    margin: 50px 0;
+}
+
 
 
 /* mobile devices */
@@ -204,5 +234,9 @@ nav a:hover {
   }
   .popular-img {
     width: 100%;
+  }
+  .copyright{
+    margin: 0 20px;
+    padding-bottom: 10px;
   }
 }
