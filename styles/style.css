@@ -27,22 +27,40 @@ nav h3 {
   color: #131318;
   margin-left: 5px;
 }
-.travel{
-  color: #FF5400;
+.travel {
+  color: #ff5400;
 }
-nav ul{
-    display: flex;
+nav ul {
+  display: flex;
 }
-nav li{
-    list-style: none;
-    padding-right: 40px;
+nav li {
+  list-style: none;
+  padding-right: 40px;
 }
-nav a{
-    text-decoration: none;
-    color: #424247;
-    font-size: 1.15rem;
+nav a {
+  text-decoration: none;
+  color: #424247;
+  font-size: 1.15rem;
 }
-nav a:hover{
-    color: #FF5400;
-    transition: .5s;
+nav a:hover {
+  color: #ff5400;
+  transition: 0.5s;
+}
+
+/* banner section */
+.banner {
+  background-image: url("../Images/Group\ 13\ \(1\)\ \(1\).png");
+  height: 80vh;
+  border-radius: 16px;
+}
+
+/* mobile devices */
+@media screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav li {
+    padding-right: 25px;
+  }
 }
