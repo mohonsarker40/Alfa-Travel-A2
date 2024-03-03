@@ -102,16 +102,16 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 20px;
-} 
-.popular-content{
-    flex: 1;
 }
-.popular-img{
-    width: 50%;
+.popular-content {
+  flex: 1;
 }
-.popular-img img{
-    width: 100%;
-    height: 100vh;
+.popular-img {
+  width: 50%;
+}
+.popular-img img {
+  width: 100%;
+  height: 100vh;
 }
 .popular-content h3 {
   color: rgb(19, 19, 24);
@@ -119,14 +119,14 @@ nav a:hover {
   font-weight: 800;
   margin: 0;
 }
-.popular-content p{
-    color: rgba(19, 19, 24, 0.7);
-    padding-top: 24px;
-    padding-bottom: 24px;
+.popular-content p {
+  color: rgba(19, 19, 24, 0.7);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-.popular-content li{
-    color: rgba(19, 19, 24, 0.7);
-    padding-bottom: 16px;
+.popular-content li {
+  color: rgba(19, 19, 24, 0.7);
+  padding-bottom: 16px;
 }
 
 /* mobile devices */
@@ -134,12 +134,15 @@ nav a:hover {
   body {
     padding: 0 20px;
   }
-  nav {
+  nav,
+  .popular {
     flex-direction: column;
-    text-align: center;
   }
   nav li {
-    padding-right: 25px;
+    padding-right: 20px;
+  }
+  nav a{
+    font-size: 1rem;
   }
   .banner {
     height: 100vh;
@@ -165,5 +168,8 @@ nav a:hover {
   }
   .field {
     margin-bottom: 10px;
+  }
+  .popular-img{
+    width: 100%;
   }
 }
